@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <a name="haut"></a> 
+   <header>
+        <img src="home.gif" id="home">
+        <p class="grandtitre">Système d'exploitation</p>
+    </header>
+
+    <nav>
+          <ul>
+        <li><a href="#si">système informatique</a></li>
+        <li>Système d'exploitation</li>
+        <li>Exemples</li>
+        <li>Rôle d’un SE</li>
+        <li>Structuration</li>
+        <li>Caractéristiques</li>
+        <li><a href="#demar">Démarrage de l'ordinateur</a></li>
+
+    </ul> 
+    </nav>
+ 
+   
+    
+   <section>
+    <br><br><br>
+    <hr>
+    <a name="si"></a>
+    <h2>système informatique</h2>
+    
+    Information : Une information est un ensemble des données structurées pouvant nous procurer une connaissance (Visuelle ,  auditive,  Audio Visuelle ) 
+    
+    
+    Un système informatique est un ensemble de matériels (hardware) et de logiciels(software) destiné à réaliser des tâches mettant en jeu le traitement automatique de l'information.
+    
+
+    <br><br><br>
+    <hr>
+    <h2> Système d'exploitatio</h2>
+   n
+    Un système d’exploitation est un ensemble de programme  ayant pour tâches de contrôler et exploiter toutes les ressources matérielles et logicielles d’un ordinateur.
+    
+    C’est une interface entre le matériel et l’utilisateur.
+    
+    <br><br><br>
+    <hr>
+    <h2>Exemples</h2>
+    
+        Windows, MS DOS (Microsoft), 
+         OS/2 ,OS/400(IBM), :(Personal Computer)
+    
+        Mac OS (apple) :Macintosh. 
+    
+        Solaris (sun microsystems) : station de travail.
+    
+        Unix, Linux : (logiciel libre):sur plusieurs machines…
+    
+        Android (noyau linux) : tablette , smartphone 
+    
+    
+        <br><br><br>
+    <hr>
+     <h2>Rôle d’un système d’exploitation</h2>   
+        Rôle visible : 
+        Le système d’exploitation joue le rôle d’intermédiaire entre l’Homme et la Machine.
+        Utilisation des règles de commande du système,
+        Exemple: l’affichage Date/Heure, copiage…
+         Détection des erreurs    ...  informer l’utilisateur.
+         Rôle caché :
+        Il gère les échanges entre le processeur, la mémoire centrale et les outils périphériques.
+        Exemple :  allocation de la mémoire, enregistrement d’un fichier...
+    
+    
+        <br><br><br>
+    <hr>
+    <h2>Structuration</h2>
+    Le système d’exploitation assure la coordination des opérations de l’ordinateur nécessaires à    l’exploitation des applications utilisateurs. Il est composé essentiellement :
+        des services communs 
+        des services spécifiques
+        Le système de fichiers
+        L'interpréteur de commande
+    Les services communs :
+    Ces services se définissent comme étant le noyau du système qui doit être toujours résident en mémoire centrale de l’ordinateur.
+    L'interpréteur de commande 
+    (en anglais shell) permettant la communication avec l’utilisateur par l'intermédiaire d'un langage de commandes,
+    Dans le cas des systèmes multi_utilisateurs le système de fichiers doit assurer la confidentialité des fichiers 
+    . Services spécifiques (utilitaires):
+    Ils sont prévus pour répondre à certains besoins spécifiques. 
+    Ils forment la partie du SE stockée en mémoire secondaire et qui n’est pas chargée en mémoire centrale au démarrage mais qui sera chargée une fois que le service est demandé.
+    
+    Exemples : La gestion du dialogue Homme/Machine , gestion des fichiers,  gestion des périphériques,  
+        gestion des processus, gestion de la mémoire  …
+    Le système de fichiers
+    (en anglais «file system», noté FS), permettant de gérer les fichiers dans une arborescence (créer, enregistrer, copier, supprimer…). 
+    
+    
+    <br><br><br>    
+    <hr>
+    <h2>Caractéristiques fondamentales d’un SE</h2>
+    Les SE peuvent être classifiés par 2 critères :
+    Nombre de taches :
+    mono_taches : à un instant t SE l'exécute un seul pgm sauf qques exceptions
+    Multi_taches : plusieurs processus peuvent s’exécuter simultanément
+    Nombre d’utilisateurs :
+    Mono_sessions : un et un seul utilisateur à la fois sur une machine
+    Multi_sessions : plusieurs utilisateurs peuvent travailler simultanément sur la machine
+    
+
+    <br><br><br>   
+    <hr>
+    <a name="demar"></a>
+    <h2>Démarrage de l'ordinateur</h2>
+    
+    <h3>Le BIOS</h3>
+    Le BIOS (Basic Input/Output System) est un ensemble de programmes enregistrés dans la ROM .Il contient les programmes et les pilotes de démarrage utilises pour permettre a l'ordinateur de démarrer. Il intègre aussi des programmes de diagnostic et d'autotest 
+    
+    <br>
+    <h3>L’autotest</h3>
+    Lors de démarrage de l'ordinateur le BIOS va commencer par effectuer des tests pour vérifier la configuration et le fonctionnement du système .
+    Cette opération est effectuée par un programme spécifique dit POST (Power On Self Test). 
+    
+    <br><br>
+    <h3>Le SETUP</h3>
+    Le SETUP est un ensemble de procédures permettant de configurer l'ordinateur selon ses caractéristiques matérielles (type des disques, mot de passe, date et heure système, choix de la séquence de démarrage…). Toutes ces informations sont enregistrées dans la mémoire RAMCMOS.
+    L'accès au setup se fait grâce au BIOS. 
+    
+    <br><br>
+    <h3>Chargement du système</h3>
+    Une fois la phase d'autotest est accomplie avec succès, le BIOS lance le chargement du SE dans la RAM à travers le Système d'amorçage (démarrage) appelé BOOTSTRAP (chargeur d'amorce)
+    
+    <br>
+    Le BOOTSTRAP cherche le SE disponible dans les mémoires de masse (ou sur le réseau dans des cas exceptionnels) selon la séquence de démarrage fixée dans le SETUP
+    
+    <hr>
+    <h1>Gestion des processus </h1>
+
+    <h2>Mise en situation</h2> 
+    Un processus est un programme en cours d'exécution.(Chargé en mémoire centrale)
+    Dans un système multi-tâches, on peut avoir à un instant donné, plusieurs processus qui se partagent la mémoire centrale et le temps processeur.
+    
+    <h2>Principe de fonctionnement de la gestion des processus:</h2>
+    La gestion des processus repose sur deux éléments:
+    <ul>
+        <li>Un allocateur ou répartiteur (en anglais Dispatcher) qui repartit (distribue) le temps processeur entre les différents processus,
+  </li>
+        <li>Un planificateur ou ordonnanceur ( Scheduler en anglais ) qui détermine le processus à activer suivant le contexte (demande du système ou du utilisateur)
+    </li>
+    </ul>
+      
+    La gestion des processus se résume essentiellement dans deux procédures:
+    <ul>
+        <li>la gestion des interruptions (signaux venants du matériel , disque saturé, fin d’impression…)
+   </li>
+        <li>gestion de multitâches (synchronisation des processus, gérer les accès simultanés aux ressources…
+</li>
+    </ul>
+     
+
+
+
+
+
+
+
+    <h1>Gestion de la mémoire</h1>
+
+
+    La gestion de la mémoire consiste à remplir les fonctions suivantes :
+    <ul>
+        <li> Permettre le partage de la mémoire entre processus (pour un système multi-tâches)</li>            
+        <li> Protéger les espaces mémoires utilisés.</li>        
+        <li> Récupérer les espaces mémoires non utilisés</li>        
+        <li> Optimiser la quantité de mémoire disponibles</li>        
+    </ul>
+
+    <p id="pMemVirt">
+        En cas d'insuffisance de mémoire physique, le système d'exploitation peut créer une zone mémoire sur le disque dur, appelée <span id="MemVirt">«mémoire virtuelle»</span>.
+
+    </p>
+    
+    <hr>
+    <h1>Installation et désinstallation de logiciels</h1>
+    
+<p>Un PC équipé d’un système d’exploitation devient opérationnel mais il reste incapable de répondre aux besoins variés des utilisateurs</p>
+
+<p>L’installation et la désinstallation sont des pratiques courantes pour pouvoir exploiter ou retirer les logiciels de son système.
+</p>
+<h2>Installation de logiciels </h2>
+<p>cette action consiste à Copier les différents fichiers d'un logiciel sur le disque dur et adapter le système pour l'accueillir et le paramétrer. 
+</p>
+<p>Avant d’installer un logiciel il faut s’assurer du type de la copie :
+    <ul>
+<li>Logiciel libre (open source) :  fournis avec leurs codes sources (programme sources). </li>
+<li>Logiciel gratuit (Gratuiciel ou freeware) : utilisés et diffusés gratuitement, mais sans avoir le droit de les modifier ni les vendre</li>
+<li>Logiciel partagé (Partagiciel ou shareware) : les auteurs demandent, sans obligation, une cotisation (montant) qui sera versée librement par l’utilisateur</li>
+<li>Version d’essai d’un logiciel (démo) : version limitée à un nombre d’utilisation ou une période d’utilisation </li>
+<li>Logiciel payant : licence d’utilisation lors de l’installation</li>        
+    </ul>
+     
+    
+    
+    
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr><a href="#haut"> <img src="flechehaut.jpg" id="fhaut"></a>
+
+   </section>   
+    
+    
+    
+   <footer class="bordure">adresse.mail@yahoo.fr</footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="fr" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Topologie</title>
+</head>
+
+<body>
+<p>&nbsp;</p>
+<ul>
+	<li>Définition </li>
+	<li>Topologie </li>
+	<li>Types des réseaux </li>
+	<li>Protocoles</li>
+	<li>Architectures</li>
+	<li>Qu’apportent les réseaux ?</li>
+	<li>Configurer un réseau</li>
+	<li>Sécuriser un réseau</li>
+</ul>
+<hr/>
+<p>&nbsp;</p>
+
+<h2>définition </h2>
+<p>Un réseau informatique correspond à un ensemble de moyens matériels et logiciels 
+reliés entre eux leur permettant d’échanger des informations et de partager des 
+ressources.</p>
+<p>&nbsp;</p>
+<hr/>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h2>Topologie : </h2>
+
+<p>Organisation physique et logique d’un réseau. </p>
+<p>L’organisation physique concerne la façon dont les machines sont connectés 
+(Bus, Anneau, Étoile ….). <br />
+La topologie logique montre comment les informations circulent sur les réseaux 
+(diffusion ou point à point). <br />
+<br />
+</p>
+<hr/>
+<h2>Types des réseaux</h2>
+<p>
+Suivant la distances qui sépare les ordinateurs, on distingue plusieurs 
+catégorie de réseaux :</p>
+<ul>
+	<li>Les LAN : Local Area Network</li>
+	<li>Les MAN : Metropolitan Area Network</li>
+	<li>Les WAN : Wide Area Network<br />
+	</li>
+</ul>
+<hr/>
+<h2>protocoles</h2>
+Un protocole est un ensemble de règles destinées à une tâche de communication 
+particulière.<br />
+Deux ordinateurs doivent utiliser le même protocole pour pouvoir communiquer 
+entre eux. <br />
+En d ’autres termes, il doivent parler le même langage pour se comprendre. <br />
+<br />
+<br />
+<br />
+<hr/>
+<h2>Architecture des réseaux</h2>
+<h3>Architecture client serveur
+</h3>
+Le serveur :<br/>
+<p>Ordinateur ou programme qui met à disposition des services informatiques. Exemple : un serveur Web fournit le service d'hébergement de pages HTML
+</p>
+Le client<br>
+<p>L'ordinateur client est généralement un ordinateur personnel ordinaire, équipés de logiciels relatifs aux différents types de demandes qui vont être envoyées, comme un navigateur web.
+</p>
+<p><img alt="Clent Serveur"  src="clientServeur.png"  /></p>
+<h3>Architecture peer to peer</h3>
+<p>les réseaux d'égal à égal ne sont valables que pour un petit nombre d'ordinateurs (généralement une dizaine), et pour des applications ne nécessitant pas une grande sécurité</p>
+
+<img alt="peer to peer" height="156" src="PtoP.png" />
+
+<hr/>
+<h2>Qu’apportent les réseaux ?</h2>
+<p>Les réseaux permettent :</p>
+<ul>
+	<li>Le partage des fichiers</li>
+	<li>Le partage d’application : compilation, SGBD</li>
+	<li>Partage de ressources matérielles : l’imprimante, disque…</li>
+	<li>Télécharger des applications et des fichiers</li>
+	<li>L’interaction avec les utilisateurs connectés : messagerie électronique, 
+	conférences électroniques, ….</li>
+	<li>Le transfert de données en général: réseaux informatiques</li>
+	<li>Les transfert de la parole : réseaux téléphoniques</li>
+	<li>Le transfert de la parole, de la vidéo et des données </li>
+</ul>
+
+<hr/>
+
+
+
+<h2>Identification des machines</h2>
+<p>Pour établir une communication dans un réseau, l’émetteur doit disposer des 
+informations nécessaires pour identifier le récepteur.</p>
+<p>Sur un réseau utilisant le protocol TCP/IP chaque machine est identifiée par une adresse IP.
+Chaque identifiant IP, appelé numéro ou adresse IP, doit être unique sur l'ensemble
+du réseau. </p>
+
+<h3>Format d'une adresse IP</h3>
+<p>
+Une adresse IP est un nombre codé sur 4 octets (32 bits).<br/>
+Exemple : en mode binaire une adresse IP prend la forme suivante :<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			10011011 01101001 00110010 01000101</p>
+
+
+<p>Traduite en mode décimal, on obtient 4 nombres compris entre 0 et 255. Dans notre<br/>
+exemple :  155.105.50.69
+</p>
+<p>Le plus courant, cette adresse est représentée sous la forme décimale pointée w.x.y.z
+où w,x,y,z sont quatre chiffres décimaux allant de 0 à 255. 
+<br/>Cette adresse peut être vue de 4 façons différentes:</p>
+<ul>
+	<li>La machine d'adresse w.x.y.z . </li>
+	<li>La machine d'adresse z du réseau w.x.y.0 . </li>
+	<li>La machine d'adresse y.z du réseau w.x.0.0 . </li>
+	<li>La machine d'adresse x.y.z du réseau w.0.0.0 . </li>
+</ul>
+
+<p>La décomposition d'une adresse IP en adresse de réseau plus une adresse de
+machine sur un réseau ne se fait pas au hasard.
+<br/>Pour voir si l'adresse du réseau d'une machine est codée sur 1,2 ou 3 octets, il suffit
+de regarder la valeur du premier octet (ou seulement les premiers bits du premier
+octet). </p>
+<p><img alt="classes IP" height="101" src="ClassesIP.png" width="575" /></p>
+<p>Remarques<br />
+1 - Pour chaque classe d’adresses, on trouve des plages d'adresses réservées 
+pour les réseaux locaux. Ces adresses ne sont pas routables ( Elles ne peuvent 
+pas être<br />
+utilisées en dehors des réseaux locaux) :</p>
+<p><img alt="adresses locales" height="101" src="adrLocal.png" width="437" /></p>
+<p>2- Adresse réservée pour les tests 127.0.0.1 adresse locale de la machine 
+(loopback).</p>
+<h3>Masque du réseau</h3>
+<p><br />
+Afin de clairement identifier la partie de l'adresse représentant le réseau et 
+celle<br />
+appartenant à la machine, on utilise un masque (mask) composé de 32 bits.<br />
+Les bits représentant le réseau sont positionnés à 1 et les bits répresentant la 
+machine dans le réseau sont positionnés à 0.<br />
+En conséquence, le masque pour un réseau de classe B se compose comme suit:<br />
+Masque : 11111111 11111111 -- 00000000 00000000<br />
+Adresse IP : 10011011 01101001 -- 00110010 01000101<br />
+Réseau machine<br />
+La valeur du masque en mode décimal est 255.255.0.0.</p>
+
+<h3>adresse MAC</h3>
+<p>Dans un réseau local, chaque machine dispose d'une adresse physique unique(adresse MAC). <br/>
+Cette adresse dépend du matériel utilisé pour mettre la machine en réseau.</p> 
+<p>Dans un réseau TCP/IP, chaque machine est identifiée par une adresse IP.  <br/>
+Cette adresse est logique, elle ne dépend pas du matériel. <br/>
+Cette adresse IP peut être modifiée par les administrateurs pour diverses raisons. 
+</p>
+<hr/>
+<h1>Sécuriser un réseau</h1>
+<p>La sécurité définit la protection des ressources de réseau contre le dévoilement, la modification, le piratage, la restriction ou la destruction non autorisée
+</p>
+<h3>Utilisation d’un pare-feu </h3>
+<p>Un pare-feu (appelé aussi coupe-feu, garde-barrière ou firewall en anglais), est un système permettant de protéger un ordinateur ou un réseau d'ordinateurs des intrusions provenant d'un réseau tiers (notamment Internet).
+il s'agit d'une passerelle filtrante comportant au minimum les interfaces réseau suivantes : 
+</p>
+
+<h3>Utilisation d’un Proxy</h3>
+<p>Le Proxy est une machine qui joue le rôle d’intermédiaire entre les ordinateurs d’un réseau local et internet. 
+
+</p>
+
+
+
+</body>
+
+</html>
