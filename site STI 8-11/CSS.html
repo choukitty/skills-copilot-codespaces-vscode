@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+	<a name="Top"></a>
+    <header>
+		<img src="home.gif" id="home">
+        <img src="CssBanner.png" alt="">
+    </header>
+    <nav>
+        <ul>
+             <li><a href="#MEF_texte" >Mise en forme de texte</a></li>
+            <li><a href="#MEF_paragraphes" >Mise en forme de paragraphe</a></li>
+            <li><a href="#MEF_bordure" >bordure et ombre</a></li>
+            </ul>
+	
+		
+    </nav>
+    <section>
+    <!-- --------------------------------------------------------    -      -->
+    <hr>
+    <a name="MEF_texte"></a>
+    <h1>Mise en forme de texte</h1>
+<h2>Police</h2>
+<p>La propriété CSS qui permet d'indiquer la police à utiliser est font-family.</p>
+<ul>
+	<li>Exemples :</li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">
+			<pre class="code_css">
+			div {
+				font-family : arial,georgia,verdana;
+			}</pre>
+			</td>
+		<td class="code_html">
+          &nbsp;</td>
+		<td><p id="police_arial">Ceci est un paragraphe écrit avec la police Arial</p>
+	    <p id="police_Georgia">Ceci est un paragraphe écrit avec la police Georgia</p></td>
+    </tr>
+</table>
+<p>pour éviter les problèmes si l'internaute n'a pas la même police que vous, on 
+précise en général plusieurs noms de police, séparés par des virgules</p>
+<p>exemple : la police de l'&eacute;l&eacute;ment &lt;div&gt; est Arial, sinon  Georgia, sinon Verdana, 
+sinon la police par défaut du navigateur.</p>
+<pre class="code_css">
+div {
+	font-family : arial,georgia,verdana;
+}</pre>
+<p>Voici une liste de polices qui fonctionnent bien sur la plupart des 
+navigateurs : </p>
+<ul>
+	<li>Arial</li>
+	<li>Arial Black</li>
+	<li>Courier New</li>
+	<li>Times New Roman</li>
+	<li>Comic Sans MS</li>
+	<li>Georgia</li>
+	<li>Verdana</li>
+</ul>
+
+<h2>Taille</h2>
+<p>La propriété CSS qui permet de modifier la taille du texte est font-size, la 
+taille d'un texte peut être mesurée soit d'une manière absolue ou relative</p>
+<ul>
+	<li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css"><p>p#taille_absolue{<br>
+		  font-size : 16px;<br>
+		  }</p>
+		  <p>&nbsp;</p></td>
+		<td class="code_html">
+          <p>&lt;p id=&quot;taille_absolue&quot;&gt;<br>
+            Ceci est un paragraphe de taille 16 pixels<br>
+  		&lt;/p&gt;</p>
+          <p>&nbsp;</p></td>
+		<td><p id="taille_absolue">Ceci est un paragraphe de taille 16 pixels</p>
+        <p id="taille_relative">Ceci est un paragraphe une fois et demi plus grand que le texte actuel</p></td>
+	</tr>
+</table>
+<p>Unité de mesure absolue (fixe):</p>
+<ul>
+	<li>px : pixel</li>
+	<li>mm : millimètre</li>
+	<li>cm : centimètre</li>
+	<li>in : pouce (2.54cm)</li>
+	<li>pt : point</li>
+</ul>
+<p>Unités de mesure relative (par rapport à un autre élément)</p>
+<ul>
+	<li>% : relative à la taille du texte du parent</li>
+	<li>em : relative à la taille du texte actuel (pour grossir un texte 
+	utiliser une valeur &gt;1, pour réduire un texte utiliser une valeur &lt;1, pour 
+	un texte normale utiliser la valeur 1)</li>
+	<li>rem : relative à la taille du texte de la racine </li>
+</ul>
+<h2>Gras</h2>
+<p>La propriété CSS à utiliser pour mettre en GRAS un texte est font-weight.</p>
+<ul>
+	<li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">&nbsp;</td>
+		<td class="code_html">
+&nbsp;</td>
+		<td><p id="style_gras">Ceci est un paragraphe en Gras</p></td>
+	</tr>
+</table>
+<h2>Italique</h2>
+<p>La propriété CSS à utiliser pour mettre en ITALIQUE un texte est font-style.</p>
+<ul>
+	<li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">&nbsp;</td>
+		<td class="code_html">
+&nbsp;</td>
+		<td><p id="style_italique">Ceci est un paragraphe en italique</p></td>
+	</tr>
+</table>
+<h2>Soulignement</h2>
+<p>La propriété CSS à utiliser pour mettre un SOULIGNEMENT pour un texte est text-decoration.</p>
+<ul>
+	<li>Exemples : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">
+		<p><br>
+      </p></td>
+		<td class="code_html">
+          <p>&nbsp;</p>
+          </td>
+		<td><p id="style_soulignebas">Ceci est un paragraphe souligné</p>
+	    </td></tr>
+</table>
+<h2>Couleur du texte</h2>
+<p>La propri&eacute;t&eacute; CSS &agrave; utiliser pour changer la couleur d'un texte est color.</p>
+<ul>
+  <li>Exemples : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+  <tr>
+    <th class="titre">Code en CSS</th>
+    <th class="titre">Code en HTML</th>
+    <th class="titre">Aper&ccedil;ue</th>
+  </tr>
+  <tr>
+    <td class="code_css">&nbsp;</td>
+    <td class="code_html">&nbsp;</td>
+    <td>
+    <p id="couleur_vert">Ceci est en vert</p>
+    </td>
+  </tr>
+</table>
+<h2>Casse</h2>
+<p>La propri&eacute;t&eacute; CSS &agrave; utiliser pour Transformer un texte en minuscule ou majuscule.</p>
+<ul>
+  <li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+  <tr>
+    <th class="titre">Code en CSS</th>
+    <th class="titre">Code en HTML</th>
+    <th class="titre">Aper&ccedil;ue</th>
+  </tr>
+  <tr>
+    <td class="code_css">&nbsp;</td>
+    <td class="code_html">&nbsp;</td>
+    <td>
+    <p id="casse_majuscule">ceci est mon texte</p>
+    </td>
+  </tr>
+</table>
+<!-- --------------------------------------------------------    -      -->
+<hr><a name="MEF_paragraphes" ></a>
+<h1>Mise en forme de paragraphe</h1>
+<h2>Alignement</h2>
+<p>La propriété CSS qui permet de changer l'alignement d'un paragraphe est text-align.</p>
+<pre class="code_css">&nbsp;</pre>
+<p>Les autres choix de l'alignment sont: </p>
+<ul>
+	<li>left : alignement &agrave; gauche</li>
+	<li>right : alignement &agrave; droite</li>
+	<li>justify : alignement en m&ecirc;me temps &agrave; gauche et &agrave; droite</li>
+</ul>
+<h2>Retrait</h2>
+<p>La propriété CSS qui permet de modifier l'indentation de la 1&egrave;re ligne du texte text-indent.</p>
+<ul>
+	<li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">&nbsp;</td>
+		<td class="code_html">
+&nbsp;</td>
+		<td><p id="retrait">le retrait fait avancer la premi&egrave;re ligne du paragraphe par rapport au reste des lignes. le retrait peut &ecirc;tre n&eacute;gatif</p></td>
+	</tr>
+</table>
+<h2>Direction</h2>
+<p>La propriété CSS à utiliser pour changer la direction d'un texte est direction</p>
+<p>La direction du texte est par d&eacute;faut de  gauche &agrave;  droite &quot;ltr&quot;, si on a un texte &eacute;crir en arabe on doit changer sa direction de droite &agrave; gauche&quot;rtl&quot;.</p>
+<ul>
+  <li>Exemple : </li>
+</ul>
+<table border="0" width="100%" cellspacing="4">
+	<tr>
+		<th class="titre">Code en CSS</th>
+		<th class="titre">Code en HTML</th>
+		<th class="titre">Aperçue</th>
+	</tr>
+	<tr>
+		<td class="code_css">p#direction {<br>
+direction : rtl;<br>
+}</td>
+		<td class="code_html">
+&lt;p id=&quot;direction&quot;&gt;<br>
+&#1607;&#1584;&#1607; &#1601;&#1602;&#1585;&#1577; &#1576;&#1575;&#1604;&#1604;&#1594;&#1577; &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;&lt;/p&gt;</td>
+		<td><p id="direction">&#1607;&#1584;&#1607; &#1601;&#1602;&#1585;&#1577; &#1576;&#1575;&#1604;&#1604;&#1594;&#1577; &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</p></td>
+	</tr>
+</table>
+
+<!-- ---------------------------------------------------------------------- -->
+<hr><a name="MEF_bordure" ></a>
+<h1>Mise en forme de la bordure</h1>
+<h2>Bordure</h2>
+<p>Pour tracer une bordure, il faut choisir : </p>
+<ul>
+  <li>un style de trait (border-style), </li>
+  <li>une épaisseur (border-size) </li>
+  <li> une couleur (border-color). </li>
+</ul>
+<p>Si vous voulez changer l'arrondissement des coins, vous pouvez utiliser la propri&eacute;t&eacute; border-radius</p>
+<p>Une bordure est compos&eacute;e de 4 traits</p>
+<ul>
+  <li>bordure du haut (top)</li>
+  <li>bordure de droite (right)</li>
+  <li>bordure de bas (bottom)</li>
+  <li>et bordure de gauche (left)</li>
+</ul>
+<p>Pour pr&eacute;ciser lequel des bordures &agrave; modifier, utiliser la propri&eacute;t&eacute; contenant la position de la bordure (border-top-style, border-top-size, border-top-color, border-left-style, ...)</p>
+<ul>
+  <li>Exemple: le titre de cette page possède une bordure simple (solid) de 
+	taille 2 pixels (2px) et de couleur rouge (red)</li>
+</ul>
+<ul>
+  <li>Exemple de bordures</li>
+</ul>
+<p><span id="normale">border-style : solid;</span>
+<span id="double">border-style : double;</span>
+<span id="point">border-style : dotted;</span></p>
+<p><span id="tiret">border-style : dashed;</span>
+<span id="interne">border-style : inset;</span>
+<span id="externe">border-style : outset;</span></p>
+
+<h2>Ombre pour boite</h2>
+<p>Pour ajouter un ombre &agrave; une boite, utiliser la propri&eacute;t&eacute; box-shadow.</p>
+<div class="code_css" id="ombre_boite"><br>
+&nbsp;<br>&nbsp;</div>
+<h2>Ombre pour texte</h2>
+<p>Pour ajouter un ombre &agrave; un texte, utiliser la propri&eacute;t&eacute; 
+text-shadow.</p>
+<P><span id="ombre_texte">Voici mon texte</span></P>
+
+<a href="#Top"><img src="flechehaut.jpg" alt="Monter" id="fhaut">	</a>
+<!--  -------------------------------------------------------------------------- -->
+    </section>
+    
+<footer class="bordure">adresse.mail@yahoo.fr</footer>
+</body>
+</html>
